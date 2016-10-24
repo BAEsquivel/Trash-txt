@@ -1103,7 +1103,7 @@ Dirk would be the best person to elaborate on this.
 <ul>
 <li>Most current car architectures are based on Genivi, employing Qt for the GUI part of the interaction and FRANCA (commonapi) for communication issues. The current architecture should be extended to enable interaction with components designed after the W3C MMI architecture. This aims for an easy extension of existing deployments with support of additional modalities, devices and sensors within and outside the car.</li>
 <li>An interaction manager will take care about the business logic and accessing the existing components like HMI, Vehicle Interface, Phone, ...</li>
-<li>FRANCA wmay be used to deliver MMI lifecycle events.
+<li>FRANCA may be used to deliver MMI lifecycle events.
 </li>
 </ul>
 <p><b>Dependencies:</b>
@@ -1121,13 +1121,14 @@ Dirk would be the best person to elaborate on this.
 <p><b>Gaps</b>
 </p>
 <ul>
-<li>Existing standards like Genivi are not prepared to be enhanced by additional modalities.</li>
+<li>Existing standards like Genivi are not prepared to be enhanced by additional modalities. However, the combination of Qt and Franca for automotive apps is kind of similar to HTML5 and SCXML for Web apps</li>
+<li>GENIVI guys have started to consider the combination of HTML5 and JS for IVI apps</li>
 <li>A consistent multimodal dialog concept is missing to allow for a seamless user experience across modalities.</li>
 </ul>
 <p><b>What needs to be standardized:</b>
 </p>
 <ul>
-<li>Mapping of existing components to Modality Components and Interaction Managers</li>
+<li>Mapping of existing components to Modality Components and Interaction Managers as well as messaging concepts</li>
 <li>Introduction of a topmost Interaction Manager to allow for a consistent user experience across modalities</li>
 <li>Addition of new, so far unknown, modality components into the overall concept</li>
 </ul>
